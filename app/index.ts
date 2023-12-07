@@ -11,8 +11,9 @@ dotenv.config();
 
 const app = express();
 
-app.set('views', path.join(__dirname, './templates'));
-app.set('view engine', 'twig');
+app.set('views', path.join(__dirname, '/views'));
+app.set('view engine', 'html');
+app.engine('html', twig.__express);
 
 app.use(cors());
 app.use(helmet({ contentSecurityPolicy: false }));

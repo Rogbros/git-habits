@@ -1,6 +1,6 @@
 {
   "watch": ["app", ".env"],
-  "ext": "js,ts,json",
+  "ext": "js,ts,json,twig,html",
   "ignore": [
     "app/logs/*",
     "app/**/*.{spec, test}.ts"
