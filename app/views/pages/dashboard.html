@@ -4,4 +4,12 @@
   <h1 class="text-3xl font-bold">Git Habits</h1>
   <p>This is a main page for Git Habits App</p>
   <p>{{ message }} this is a message from controller!</p>
+  <button 
+    hx-get="/test"
+    hx-target="#return-handler" 
+    hx-swap="beforeend"
+  >
+    Click me
+  </button>
+  <div id="return-handler"></div>
 {% endblock %} 
