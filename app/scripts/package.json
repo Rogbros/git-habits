@@ -1,0 +1,17 @@
+{
+  "name": "habits-htmx-scripts",
+  "version": "1.0.0",
+  "description": "Scripts for all views for the apllication",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon",
+    "start": "npm run build && node dist/srerver.js",
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "rogson_dev",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {}
+}
+
