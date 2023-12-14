@@ -18,6 +18,7 @@ app.engine('html', twig.__express);
 app.use(cors());
 app.use(helmet({ contentSecurityPolicy: false }));
 app.use(express.json());
+app.use(express.static(__dirname + '/static'));
 
 app.use('/', router)
 
